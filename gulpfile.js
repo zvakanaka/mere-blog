@@ -28,12 +28,12 @@ gulp.task('dist', ['clean'], function (cb) {
   //TODO: check for css/markdown.css and conditionally load github-markdown
   gulp.src('./bower_components/github-markdown-css/github-markdown.css')
     .pipe(rename('markdown.css'))
-    .pipe(gulp.dest('./temp/css/'));
-  //TODO: concurrency problem here, probably just use run-sequence
-  gulp.src('temp/css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css/'));
+    .pipe(gulp.dest('./dist/css/'));
+  gulp.src('./src/css/main.css')
+    .pipe(gulp.dest('./dist/css/'));
   gulp.src('./bower_components/marked/marked.min.js')
+    .pipe(gulp.dest('./dist/js/'));
+  gulp.src('./src/js/main.js')
     .pipe(gulp.dest('./dist/js/'));
 });
 
