@@ -35,6 +35,8 @@ gulp.task('dist', ['clean'], function (cb) {
     .pipe(gulp.dest('./dist/js/'));
   gulp.src('./src/js/main.js')
     .pipe(gulp.dest('./dist/js/'));
+  gulp.src('./src/js/patchArticle.js')
+    .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('default', ['nav', 'dist']);
