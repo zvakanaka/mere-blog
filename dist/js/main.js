@@ -14,16 +14,19 @@ function getFile(url, callback, parseJSON) {
 function setMarkdown(file) {
   getFile(`posts/${file}`, function(post) {
     document.querySelector('.markdown-body').innerHTML = marked(post);
+    const postLoaded = new CustomEvent('postLoaded', { detail: { name: post }});
+    document.dispatchEvent(postLoaded);
+    //highlight post in sidebar
     const displayedArticle = document.querySelector('.displayed-article');
     if (displayedArticle) displayedArticle.classList.remove('displayed-article');
     document.getElementById(`${file}`).classList.add('displayed-article');
   });
-  if(history.pushState) history.pushState(null, null, `#${file}`);
+  if (history.pushState) history.pushState(null, null, `#${file}`);
   else location.hash = `#${file}`;
 }
 
 function getHash() {
-  if(window.location.hash) return window.location.hash.substring(1);
+  if (window.location.hash) return window.location.hash.substring(1);
   return null;
 }
 
