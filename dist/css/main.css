@@ -1,7 +1,7 @@
 * { margin:0; padding:0; }
 :root { --header-height: 0px; --article-max-width: 800px; }
 body { display: grid; grid-template-areas: "navigation main"; grid-template-columns: 250px 1fr; }
-.navigation, .main, .scroll-wrap { height: calc(100vh - var(--header-height, 0px)); overflow-y: scroll; }
+.main, .scroll-wrap { height: calc(100vh - var(--header-height, 0px)); overflow-y: scroll; }
 .navigation > ul > li { list-style: none; margin-bottom: 10px; cursor: pointer; }
 .navigation > ul { margin-top: 60px; }
 .navigation { display: flex; flex-direction: column; align-items: center; }
