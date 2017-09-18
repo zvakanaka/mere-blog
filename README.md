@@ -10,7 +10,7 @@ Write in [markdown](https://www.markdowntutorial.com) and put your `.md` files i
 3. Serve
 
 ## Dev Instructions
-```
+```sh
 $ bower install
 $ npm install
 $ gulp
