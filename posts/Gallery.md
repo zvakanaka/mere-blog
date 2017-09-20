@@ -1,5 +1,10 @@
-# 2017 Eclipse
-![A foreigner looks up at the sun while sitting on a cliff at R-Mountain during the 2017 total eclipse](https://farm5.staticflickr.com/4421/35906225214_cd5d05897b_z_d.jpg)
-![The moon over the sun, showing a white glow and the diamond ring of the edge of the sun as it comes back](https://c1.staticflickr.com/5/4404/36693603556_9dc12e768b_z.jpg)
-![Looking up from a cliff at the eclipse with solar glasses before totality](https://c1.staticflickr.com/5/4403/36740662065_43ee0c2f46_z.jpg)
-<div class="video" src="https://raw.githubusercontent.com/zvakanaka/inspiration-is-inspiring/video/output.webm"></div>
+# Digitally Process a Negative
+The first thing to do is photograph the negative with some backlight behind it.  
+![A negative sitting on a bright cell phone screen](https://c1.staticflickr.com/5/4345/37146189936_4b537c2ddd_z.jpg)  
+Then crop.  
+![The cropped negative](https://c1.staticflickr.com/5/4360/36499172404_ef0158f2bf.jpg)  
+Thank Fred for the [NEGATIVE2POSITIVE script](http://www.fmwconcepts.com/imagemagick/negative2positive/index.php#t_zoomblur).   To use it, install [ImageMagick](https://www.imagemagick.org/script/index.php) and run a command like this:  
+```sh
+convert input.jpg output.jpg
+```
+![Digitally processed negative with accuratish color](https://c1.staticflickr.com/5/4350/36499171574_4bf74e04a9.jpg)
