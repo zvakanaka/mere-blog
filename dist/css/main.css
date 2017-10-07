@@ -2,13 +2,13 @@
 :root { --header-height: 0px; --article-max-width: 80ch; }
 body { font-family: Helvetica; display: grid; grid-template-areas: "navigation main"; grid-template-columns: 22% 1fr; }
 .main, .scroll-wrap { height: calc(100vh - var(--header-height, 0px)); overflow-y: auto; }
-.navigation > ul > li { list-style: none; margin-bottom: .7em; cursor: pointer; }
+.navigation > ul > li { list-style: none; margin-bottom: .7em; margin-left: .7em; cursor: pointer; }
 .navigation > ul { margin-top: 4em; }
 .navigation { display: flex; flex-direction: column; align-items: center; }
 .navigation > ul > li.displayed-article { font-weight: bold; }
 .markdown-body { margin: 0 auto; padding: 2em 2ch; max-width: var(--article-max-width, 80ch); }
 .markdown-body img { min-width: 100%; }
-.markdown-body video { width:100%; max-width: var(--article-max-width, 80ch); height:auto; }
+.markdown-body video { width: 100%; max-width: var(--article-max-width, 80ch); height: auto; }
 @media screen and (max-width: 80ch) {
   body { grid-template-areas: "navigation" "main"; grid-template-columns: 1fr; }
   .main, .scroll-wrap { height: auto; overflow-y: auto; }

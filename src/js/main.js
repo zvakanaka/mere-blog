@@ -14,7 +14,7 @@ function getFile(url, callback, parseJSON) {
 function setMarkdown(file, usePushState) {//file contains extension, pushState creates entry in history
   getFile(`posts/${file}`, function(post) {
     document.querySelector('.markdown-body').innerHTML = marked(post);
-    //dispatch event for patchArticle.js
+    //dispatch event for plugin-html5-video.js
     const postLoaded = new CustomEvent('postLoaded', { detail: { name: post }});
     document.dispatchEvent(postLoaded);
     //highlight post in sidebar
@@ -40,7 +40,7 @@ getFile('posts.json', function loadPostsIntoNav(posts) {
   let ul = document.createElement('ul');
   posts.forEach(function(post) {
     let li = document.createElement('li');
-    li.textContent = post.substr(0, post.lastIndexOf('.'));//strip extension
+    li.textContent = post.substr(0, post.lastIndexOf('.')).split('_').join(' ');//strip extension
     li.id = post;
     li.addEventListener('click', function(ev) {
       setMarkdown(post, true);

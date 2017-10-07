@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "github-markdown-css": "^2.8.0",
-    "marked": "^0.3.6"
+    "marked": "^0.3.6",
+    "rainbow": "^2.1.3"
   }
 }
