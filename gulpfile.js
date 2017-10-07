@@ -35,8 +35,10 @@ gulp.task('dist', ['clean'], function (cb) {
     .pipe(gulp.dest('./dist/js/'));
   gulp.src('./src/js/main.js')
     .pipe(gulp.dest('./dist/js/'));
-  gulp.src('./src/js/patchArticle.js')
+  gulp.src('./src/js/plugin-html5-video.js')
     .pipe(gulp.dest('./dist/js/'));
+  gulp.src('./src/js/plugin-code-highlight.js')
+      .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('default', ['nav', 'dist']);
