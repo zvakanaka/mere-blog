@@ -24,21 +24,23 @@ gulp.task('clean', function() {
   return del(['dist']);
 });
 
+function addSource(source, newName) {
+  let fileType = source.split('.')[source.split('.').length-1];
+  gulp.src(source)
+    .pipe(rename(newName ? newName : source.split('/')[source.split('/').length-1]))
+    .pipe(gulp.dest(`./dist/${fileType}/`));
+}
+
 gulp.task('dist', ['clean'], function (cb) {
   //TODO: check for css/markdown.css and conditionally load github-markdown
-  gulp.src('./bower_components/github-markdown-css/github-markdown.css')
-    .pipe(rename('markdown.css'))
-    .pipe(gulp.dest('./dist/css/'));
-  gulp.src('./src/css/main.css')
-    .pipe(gulp.dest('./dist/css/'));
-  gulp.src('./bower_components/marked/marked.min.js')
-    .pipe(gulp.dest('./dist/js/'));
-  gulp.src('./src/js/main.js')
-    .pipe(gulp.dest('./dist/js/'));
-  gulp.src('./src/js/plugin-html5-video.js')
-    .pipe(gulp.dest('./dist/js/'));
-  gulp.src('./src/js/plugin-code-highlight.js')
-      .pipe(gulp.dest('./dist/js/'));
+  addSource('./bower_components/github-markdown-css/github-markdown.css', 'markdown.css');
+  addSource('./src/css/main.css');
+  addSource('./bower_components/marked/marked.min.js');
+  addSource('./src/js/main.js');
+  addSource('./src/js/plugin-html5-video.js');
+  addSource('./src/js/plugin-code-highlight.js');
+  addSource('./bower_components/rainbow/dist/rainbow.min.js');
+  addSource('./bower_components/rainbow/themes/css/github.css', 'rainbow.css');
 });
 
 gulp.task('default', ['nav', 'dist']);
