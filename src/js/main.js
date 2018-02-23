@@ -20,7 +20,8 @@ function setMarkdown(file, usePushState) {//file contains extension, pushState c
     //highlight post in sidebar
     const displayedArticle = document.querySelector('.displayed-article');
     if (displayedArticle) displayedArticle.classList.remove('displayed-article');
-    document.getElementById(`${file}`).classList.add('displayed-article');
+    const li = document.getElementById(`${file}`);
+    li && li.classList.add('displayed-article');
   });
   if (usePushState && history.pushState) history.pushState(null, null, `#${file}`);
   else if (history.replaceState) history.replaceState(null, null, `#${file}`);
@@ -50,12 +51,14 @@ getFile('posts.json', function loadPostsIntoNav(posts) {
   document.querySelector('.navigation').appendChild(ul);
   const hash = getHash();
   if (hash) {//load post in url hash
-    let selectedPost = posts
+    const selectedPost = posts
       .filter(function(post) {//match with or without extension
         return post.substr(0, post.lastIndexOf('.')) === hash || post === hash;
-      })
+      });
+    selectedPost
       .forEach(function(post) {//should be only one item in loop
         setMarkdown(post, false);
       });
+    if (selectedPost.length === 0) setMarkdown(hash, false); // try unlisted article from hash
   } else setMarkdown(posts[0], false);//default - no hash specifies article
 }, true);
