@@ -9,7 +9,8 @@ Z is an amazing shortcut command that lets you jump to a directory quickly.
 
 3) Try it out:
 ```sh
-$ reset
+$ source /etc/profile.d/z.sh
+$ touch ~/.z
 $ cd  ~/Desktop
 $ cd ~
 $ z des
