@@ -1,14 +1,1 @@
-document.addEventListener('postLoaded', function highlightCode() {
-  let url = './dist/js/rainbow.min.js';
-  var script = document.createElement('script');
-  script.setAttribute('src', url);
-  document.head.appendChild(script);
-  var link = document.createElement('link');
-  link.setAttribute('rel', 'stylesheet');
-  link.setAttribute('type', 'text/css');
-  link.setAttribute('href', './dist/css/rainbow.css');
-  document.head.appendChild(link);
-  script.onload = function() {
-    Rainbow.color();/* global Rainbow */
-  };
-});
+document.addEventListener('postLoaded',function(){var a=document.createElement('script');a.setAttribute('src','./dist/js/rainbow.min.js'),document.head.appendChild(a);var b=document.createElement('link');b.setAttribute('rel','stylesheet'),b.setAttribute('type','text/css'),b.setAttribute('href','./dist/css/rainbow.css'),document.head.appendChild(b),a.onload=function(){Rainbow.color()}}/* global Rainbow */);

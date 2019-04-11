@@ -1,10 +1,13 @@
 {
   "name": "simple-blog",
   "version": "1.0.0",
-  "description": "markdown",
+  "description": "markdown blog",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx http-server -o",
+    "build": "bash build/build.sh",
+    "articles": "node build/generate-posts-json.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +22,9 @@
   "author": "adam quinton",
   "license": "ISC",
   "devDependencies": {
-    "del": "^3.0.0",
-    "gulp-clean-css": "^3.8.0",
-    "gulp-rename": "^1.2.2"
-  },
-  "dependencies": {
-    "gulp": "^3.9.1"
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-minify": "^0.5.0",
+    "http-server": "^0.11.1"
   }
 }
