@@ -1,17 +1,25 @@
 const fs = require('fs');
-const path = require('path');
+const dirsInDir = require('dirs-in-dir');
+const filesInDir = require('files-in-dir');
 
+// Example output:
+// [
+//   {
+//     folder: "books",
+//     articles: [ "mans_search_for_meaning.md" ]
+//   },
+//   { file: "about.md" }
+// ]
 function generatePostsJson(postsDirectory = 'posts', postsJsonOutFile = 'posts.json', cb) {
-  if (!fs.existsSync(postsDirectory)) throw new Error(`directory "${postsDirectory}" does not exist`);
-  const fileExtensions = ['md'];
-  const extensions = fileExtensions.map(ext => `.${ext.toLowerCase()}`);
-  const files = fs.readdirSync(postsDirectory)
-    .filter((file) => {
-      return (extensions.length === 0 || extensions.indexOf(path.extname(file).toLowerCase())>-1);
-    });
-  console.log(`Writing ${files.length} posts from ${postsDirectory} to ${postsJsonOutFile}`);
+  const files = filesInDir(postsDirectory, ['md']);
+  const postsArr = files.map(file => ({file}));
+  dirsInDir(postsDirectory).forEach(dirName => {
+    const filesWithinDir = filesInDir(`${postsDirectory}/${dirName}`);
+    postsArr.push({folder: dirName, articles: filesWithinDir});
+  })
+  console.log(`Writing ${postsArr.length} posts from ${postsDirectory} to ${postsJsonOutFile}`);
   try {
-    const json = JSON.stringify(files, null, 2);
+    const json = JSON.stringify(postsArr, null, 2);
     fs.writeFile(postsJsonOutFile, json, 'utf8', cb);
   } catch (e) {
     throw new Error(`Failed to write posts from ${postsDirectory} to ${postsJsonOutFile}\n${e}`);
