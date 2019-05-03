@@ -1,6 +1,29 @@
 [
-  "Digitally_Process_Negatives.md",
-  "HTML5_Video.md",
-  "readme.md",
-  "z.md"
+  {
+    "folder": "books",
+    "articles": [
+      "mans_search_for_meaning.md"
+    ]
+  },
+  {
+    "folder": "command_line",
+    "articles": [
+      "z.md"
+    ]
+  },
+  {
+    "folder": "docs",
+    "articles": [
+      "HTML5_Video.md"
+    ]
+  },
+  {
+    "folder": "photo",
+    "articles": [
+      "Digitally_Process_Negatives.md"
+    ]
+  },
+  {
+    "file": "about.md"
+  }
 ]
