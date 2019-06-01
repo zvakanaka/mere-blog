@@ -1,5 +1,8 @@
 [
   {
+    "file": "about.md"
+  },
+  {
     "folder": "books",
     "articles": [
       "mans_search_for_meaning.md"
@@ -18,12 +21,15 @@
     ]
   },
   {
+    "folder": "javascript",
+    "articles": [
+      "foundation.md"
+    ]
+  },
+  {
     "folder": "photo",
     "articles": [
       "Digitally_Process_Negatives.md"
     ]
-  },
-  {
-    "file": "about.md"
   }
 ]
