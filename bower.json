@@ -1,5 +1,5 @@
 {
-  "name": "simple-blog",
+  "name": "mere-blog",
   "description": "markdown",
   "main": "index.html",
   "authors": [
@@ -12,7 +12,7 @@
     "easy",
     "markdown"
   ],
-  "homepage": "zvakanaka.github.io/simple-blog",
+  "homepage": "zvakanaka.github.io/mere-blog",
   "private": true,
   "ignore": [
     "**/.*",

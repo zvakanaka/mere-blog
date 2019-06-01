@@ -1,5 +1,5 @@
 {
-  "name": "simple-blog",
+  "name": "mere-blog",
   "version": "1.0.0",
   "description": "markdown blog",
   "main": "index.html",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/zvakanaka/simple-blog"
+    "url": "github.com/zvakanaka/mere-blog"
   },
   "keywords": [
     "blog",
