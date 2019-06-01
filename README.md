@@ -1,7 +1,7 @@
-# Simple Blog
+# Mere Blog
 Write in [markdown](https://www.markdowntutorial.com) and put your `.md` files in `posts/`.  
 
-[demo](https://zvakanaka.github.io/simple-blog)
+[demo](https://zvakanaka.github.io/mere-blog)
 ## Instructions
 1. Put your [markdown](https://www.markdowntutorial.com) files (articles) in `posts/`
 2. Create an array of articles in `posts.json`
