@@ -1,2 +1,1 @@
-document.addEventListener('postLoaded',function(){[].slice.call(document.getElementsByClassName('video')).forEach(function(a){let b=document.createElement('video');b.setAttribute('controls','');// videoEl.setAttribute('preload', 'none');
-let c=document.createElement('source');c.setAttribute('src',a.getAttribute('src')),b.appendChild(c),a.appendChild(b)})});
+document.addEventListener('postLoaded',function(){[].slice.call(document.getElementsByClassName('video')).forEach(function(a){let b=document.createElement('video');b.setAttribute('controls','');let c=document.createElement('source');c.setAttribute('src',a.getAttribute('src')),b.appendChild(c),a.appendChild(b)})});
