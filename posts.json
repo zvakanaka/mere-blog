@@ -5,25 +5,20 @@
   {
     "folder": "books",
     "articles": [
-      "mans_search_for_meaning.md"
+      "Mans_Search_for_Meaning.md"
     ]
   },
   {
-    "folder": "command_line",
+    "folder": "code",
     "articles": [
-      "z.md"
+      "Web_Dev_Foundations.md",
+      "z_-_Command_Line_Tool.md"
     ]
   },
   {
     "folder": "docs",
     "articles": [
       "HTML5_Video.md"
-    ]
-  },
-  {
-    "folder": "javascript",
-    "articles": [
-      "foundation.md"
     ]
   },
   {

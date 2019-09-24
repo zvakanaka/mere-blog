@@ -15,7 +15,7 @@ function setMarkdown(file, usePushState) { // file contains extension, pushState
   getFile(`posts/${file}`, (post) => {
     document.querySelector('.markdown-body').innerHTML = marked(post);
     // dispatch event for plugin-html5-video.js
-    const postLoaded = new CustomEvent('postLoaded', { detail: { name: post }});
+    const postLoaded = new CustomEvent('postLoaded', { detail: { name: file }});
     document.dispatchEvent(postLoaded);
     // highlight post in sidebar
     const displayedArticle = document.querySelector('.displayed-article');
@@ -45,15 +45,12 @@ getFile('posts.json', (posts) => { // load posts into nav
       li.classList.add('folder');
       li.textContent = post.folder.split('_').join(' ');
       const ul2 = document.createElement('ul');
-      console.log(post);
       post.articles.forEach(fileName => {
         const li2 = document.createElement('li')
         li2.textContent = fileName.substr(0, fileName.lastIndexOf('.')).split('_').join(' '); // strip extension
         li2.id = `${post.folder}/${fileName}`;
         li2.classList.add('file');
-        console.log('fileName',fileName);
         li2.addEventListener('click', (ev) => {
-          console.log(fileName);
           setMarkdown(`${post.folder}/${fileName}`, true);
         });
         ul2.appendChild(li2);
