@@ -1,11 +1,8 @@
 [
   {
-    "file": "about.md"
-  },
-  {
     "folder": "books",
     "articles": [
-      "Mans_Search_for_Meaning.md"
+      "mans_search_for_meaning.md"
     ]
   },
   {
@@ -26,5 +23,8 @@
     "articles": [
       "Digitally_Process_Negatives.md"
     ]
+  },
+  {
+    "file": "about.md"
   }
 ]
