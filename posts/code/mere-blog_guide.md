@@ -1,5 +1,6 @@
-# HTML5 Video in Markdown
-Place the following in your markdown
+# Guide to [mere-blog](https://github.com/zvakanaka/mere-blog)
+## Insert HTML5 Videos
+Place the following HTML in your markdown
 ```html
 <div class="video" src="https://example.com/example.webm"></div>```
 ## Example output below

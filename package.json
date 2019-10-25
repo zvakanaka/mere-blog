@@ -1,11 +1,11 @@
 {
   "name": "mere-blog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "markdown blog",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx http-server-legacy -o",
+    "start": "npx http-server -o",
     "build": "bash build/build.sh",
     "articles": "node build/generate-posts-json.js"
   },
@@ -14,10 +14,8 @@
     "url": "github.com/zvakanaka/mere-blog"
   },
   "keywords": [
-    "blog",
-    "simple",
-    "easy",
-    "markdown"
+    "markdown",
+    "blog"
   ],
   "author": "adam quinton",
   "license": "ISC",
@@ -28,6 +26,6 @@
     "bower": "^1.8.8",
     "dirs-in-dir": "^1.0.2",
     "files-in-dir": "^1.0.0",
-    "http-server-legacy": "^0.11.1"
+    "http-server": "^0.11.1"
   }
 }

@@ -1,30 +1,22 @@
 [
   {
-    "folder": "books",
-    "articles": [
-      "mans_search_for_meaning.md"
-    ]
+    "file": "about.md"
   },
   {
     "folder": "code",
     "articles": [
-      "Web_Dev_Foundations.md",
-      "z_-_Command_Line_Tool.md"
+      "digitally_process_negatives.md",
+      "learning_web_dev.md",
+      "mere-blog_guide.md",
+      "z.md"
     ]
   },
   {
-    "folder": "docs",
+    "folder": "wisdom",
     "articles": [
-      "HTML5_Video.md"
+      "have_better_conversations.md",
+      "mans_search_for_meaning.md",
+      "when_you_have_the_Spirit.md"
     ]
-  },
-  {
-    "folder": "photo",
-    "articles": [
-      "Digitally_Process_Negatives.md"
-    ]
-  },
-  {
-    "file": "about.md"
   }
 ]

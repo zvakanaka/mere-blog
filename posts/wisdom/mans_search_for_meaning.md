@@ -1,4 +1,4 @@
-# *Man's Search for Meaning by Viktor Frankl*
+# *Man's Search for Meaning* by Viktor Frankl
 This book has changed my life. Here are some of the quotes I want to always keep with me. You might have to read the context to understand some of them.  
 
 
