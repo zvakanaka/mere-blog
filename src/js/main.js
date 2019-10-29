@@ -7,7 +7,7 @@ function getFile(url, callback, parseJSON) {
       else callback(xmlhttp.responseText);
     }
   };
-  xmlhttp.open("GET", url, true);
+  xmlhttp.open('GET', url, true);
   xmlhttp.send();
 }
 
@@ -45,7 +45,7 @@ getFile('posts.json', (posts) => { // load posts into nav
       li.classList.add('folder');
       li.textContent = post.folder.split('_').join(' ');
       const ul2 = document.createElement('ul');
-      post.articles.forEach(fileName => {
+      post.posts.forEach(fileName => {
         const li2 = document.createElement('li')
         li2.textContent = fileName.substr(0, fileName.lastIndexOf('.')).split('_').join(' '); // strip extension
         li2.id = `${post.folder}/${fileName}`;
@@ -80,10 +80,10 @@ getFile('posts.json', (posts) => { // load posts into nav
   document.querySelector('.navigation').appendChild(ul);
   const postsMorphed = posts
   .reduce((acc, post) => {
-    const fileName = typeof post === 'object' && post.hasOwnProperty('folder') ? `${post.folder}/${post.articles[0]}` : post.file;
+    const fileName = typeof post === 'object' && post.hasOwnProperty('folder') ? `${post.folder}/${post.posts[0]}` : post.file;
     if (typeof post === 'object' && post.hasOwnProperty('folder')) {
-      post.articles.forEach(article => {
-        acc.push(`${post.folder}/${article}`);
+      post.posts.forEach(post => {
+        acc.push(`${post.folder}/${post}`);
       });
     } else if (typeof post === 'object' && post.hasOwnProperty('file')) {
       acc.push(post.file);
