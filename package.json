@@ -5,9 +5,9 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx http-server -o",
+    "start": "(sleep 1 && npx open http://localhost:8080/test)& npx http-server -c10",
     "build": "bash build/build.sh",
-    "articles": "node build/generate-posts-json.js"
+    "posts": "node build/generate-posts-json.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "bower": "^1.8.8",
     "dirs-in-dir": "^1.0.2",
     "files-in-dir": "^1.0.0",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "open-cli": "^5.0.0"
   }
 }

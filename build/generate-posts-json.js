@@ -6,7 +6,7 @@ const filesInDir = require('files-in-dir');
 // [
 //   {
 //     folder: "books",
-//     articles: [ "mans_search_for_meaning.md" ]
+//     posts: [ "mans_search_for_meaning.md" ]
 //   },
 //   { file: "about.md" }
 // ]
@@ -15,7 +15,7 @@ function generatePostsJson(postsDirectory = 'posts', postsJsonOutFile = 'posts.j
   const postsArr = files.map(file => ({file}));
   dirsInDir(postsDirectory).forEach(dirName => {
     const filesWithinDir = filesInDir(`${postsDirectory}/${dirName}`);
-    postsArr.push({folder: dirName, articles: filesWithinDir});
+    postsArr.push({folder: dirName, posts: filesWithinDir});
   })
   console.log(`Writing ${postsArr.length} posts from ${postsDirectory} to ${postsJsonOutFile}`);
   try {

@@ -4,7 +4,7 @@
   },
   {
     "folder": "code",
-    "articles": [
+    "posts": [
       "digitally_process_negatives.md",
       "learning_web_dev.md",
       "mere-blog_guide.md",
@@ -13,7 +13,7 @@
   },
   {
     "folder": "wisdom",
-    "articles": [
+    "posts": [
       "have_better_conversations.md",
       "mans_search_for_meaning.md",
       "when_you_have_the_Spirit.md"
