@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "(sleep 1 && npx open http://localhost:8080/test)& npx http-server -c10",
+    "start": "(sleep 1 && npx open-cli http://localhost:8080/test)& npx http-server -c10",
     "build": "bash build/build.sh",
     "posts": "node build/generate-posts-json.js"
   },
