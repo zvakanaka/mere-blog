@@ -82,8 +82,8 @@ getFile('posts.json', (posts) => { // load posts into nav
   .reduce((acc, post) => {
     const fileName = typeof post === 'object' && post.hasOwnProperty('folder') ? `${post.folder}/${post.posts[0]}` : post.file;
     if (typeof post === 'object' && post.hasOwnProperty('folder')) {
-      post.posts.forEach(post => {
-        acc.push(`${post.folder}/${post}`);
+      post.posts.forEach(p => {
+        acc.push(`${post.folder}/${p}`);
       });
     } else if (typeof post === 'object' && post.hasOwnProperty('file')) {
       acc.push(post.file);
