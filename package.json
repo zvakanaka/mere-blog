@@ -1,7 +1,7 @@
 {
   "name": "mere-blog",
-  "version": "1.1.0",
-  "description": "markdown blog",
+  "version": "1.2.0",
+  "description": "vanilla JavaScript markdown blog",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +14,7 @@
     "url": "github.com/zvakanaka/mere-blog"
   },
   "keywords": [
+    "javascript",
     "markdown",
     "blog"
   ],
