@@ -12,6 +12,17 @@ body {
   grid-template-areas: "navigation main";
   grid-template-columns: 22% 1fr;
 }
+.avatar-container {
+  z-index: 1;
+  padding: 4em;
+  padding-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  padding-bottom: unset;
+}
+.avatar {
+  width: 50%;
+}
 .main,
 .scroll-wrap {
   height: calc(100vh - var(--header-height, 0px));

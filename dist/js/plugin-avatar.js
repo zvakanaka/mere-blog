@@ -1,0 +1,3 @@
+document.addEventListener('postLoaded',function(){const a=location.host.match(/^(.+).github.io/);if(a){const[,b]=a,c=document.createElement('section');c.classList.add('avatar-container');const d=document.createElement('img');// thanks!: https://stackoverflow.com/a/36380674/4151489
+d.setAttribute('src',`https://github.com/${b}.png?size=200`),d.setAttribute('alt',`GitHub Profile Picture for ${b}`),d.classList.add('avatar'),c.appendChild(d);const e=document.querySelector('.navigation');// prepend avatar section
+e.insertBefore(c,e.firstChild)}});

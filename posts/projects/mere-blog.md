@@ -1,3 +1,4 @@
+# [mere-blog](https://github.com/zvakanaka/mere-blog)
 A plain JavaScript markdown blog with plugin support  
 
 See an example blog [here](https://github.com/zvakanaka/zvakanaka.github.io)
