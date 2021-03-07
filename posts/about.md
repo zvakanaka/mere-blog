@@ -13,13 +13,13 @@ Education
 2016
 :   **BSc, Software Engineering**; BYU-Idaho
 
-* Senior Project: **[Bike Scraper Web App](https://github.com/zvakanaka/bike-list) (Node.js)**
+* Senior Project: **[Bike Scraper Web App](https://github.com/zvakanaka/bike-list) (Node.js)** ([improved version here](https://github.com/zvakanaka/list-lemur))
 
 Experience
 ----------
 
 **Web Developer** at **FamilySearch** *Jan, 2017 - Present*   
-* Full-stack web applications (**Node.js**, **JavaScript**, **Web Components**)
+* Full-stack web applications (**Node.js**, **React**, **JavaScript**, **Web Components**)
 
 **Web Development Intern** at **FamilySearch** *May - Aug, 2016*   
 * Full-stack web applications (**Node.js**, **JavaScript**, **MongoDB**)
