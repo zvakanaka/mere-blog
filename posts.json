@@ -22,6 +22,12 @@
     ]
   },
   {
+    "folder": "til",
+    "posts": [
+      "tracking-a-package.md"
+    ]
+  },
+  {
     "folder": "wisdom",
     "posts": [
       "mans_search_for_meaning.md",
