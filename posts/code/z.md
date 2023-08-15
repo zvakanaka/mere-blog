@@ -1,6 +1,14 @@
 # Z - Jump to Directories
-Z is an amazing shortcut command that lets you jump to a directory quickly.  
+`z` is an amazing shortcut command that lets you jump to a directory quickly.  
 
+## Installing with [Oh My Zsh](https://ohmyz.sh/)
+Add the [`zsh-z`](https://github.com/agkozak/zsh-z) [plugin](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) into the `plugins` array of your `~/.zshrc`.  
+E.g.:
+```sh
+plugins=(git gitfast last-working-dir zsh-syntax-highlighting history-substring-search zsh-z)
+```
+
+## Installing without [Oh My Zsh](https://ohmyz.sh/)
 1) Download z from [rupa's GitHub](https://github.com/rupa/z):  
 `sudo curl https://raw.githubusercontent.com/rupa/z/master/z.sh -o /etc/profile.d/z.sh`  
 
