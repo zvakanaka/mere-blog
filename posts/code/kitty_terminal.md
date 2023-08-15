@@ -1,3 +1,4 @@
+# [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 ## Mac shortcuts
 
 Combo | Feature
