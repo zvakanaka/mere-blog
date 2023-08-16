@@ -1,5 +1,5 @@
 # [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
-## Mac shortcuts
+## Mac [Shortcuts](https://sw.kovidgoyal.net/kitty/overview/#tabs-and-windows)
 
 Combo | Feature
 -|-
@@ -36,3 +36,10 @@ allow_remote_control no
 font_family FuraMono Nerd Font Mono Regular
 ```
 `kitty --debug-font-fallback`
+
+## Other
+https://sw.kovidgoyal.net/kitty/remote-control/#kitty-get-text  
+https://sw.kovidgoyal.net/kitty/conf/#tab-bar  
+https://sw.kovidgoyal.net/kitty/conf/#os-specific-tweaks  
+https://sw.kovidgoyal.net/kitty/conf/#keyboard-shortcuts  
+
