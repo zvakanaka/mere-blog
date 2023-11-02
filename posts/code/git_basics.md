@@ -34,3 +34,30 @@ Adds a commit for all staged files, preparing the changes to be pushed.
 ## Switch to Another Branch
 `$ git checkout branch_name`  
 If you have unstaged changes, you can "stash" them before switching branches to apply them later with `git stash`, then `git stash apply`.
+
+## Undo a Commit
+If you haven't pushed your changes yet, you can undo the commit (this leaves your files [intact](https://stackoverflow.com/a/2845739/4151489)):  
+```sh
+git reset --soft HEAD^`
+```
+(["`HEAD^` is the commit before the current one"](https://stackoverflow.com/a/2846154/4151489))
+
+If you have pushed your changes (even if there have been [multiple changes since the commit you want to undo](https://stackoverflow.com/a/21718540/4151489)), you can revert commits:
+```sh
+git revert --no-commit <commit-hash>..HEAD`.
+```
+## Unstage Files
+To [unstage all files](https://stackoverflow.com/a/21396698/4151489), run:
+```sh
+git reset HEAD
+```
+## Discard Changes
+To discard changes for a file:
+```sh
+git checkout <filename> [<other-filename>]
+```
+To discard all changes:
+```sh
+git checkout . 
+```
+
