@@ -1,3 +1,5 @@
+# LazyVim
+
 "[LazyVim](https://www.lazyvim.org/) is a [Neovim](https://neovim.io/) setup powered by [💤 lazy.nvim](https://github.com/folke/lazy.nvim) to make it easy to customize and extend your config."  
 
 [Vim key notations](https://vimdoc.sourceforge.net/htmldoc/intro.html#keycodes) 
@@ -134,3 +136,9 @@ vim.opt.title = true
 vim.opt.titlestring = " %-25.55F %a%r%m" -- or 
 vim.opt.titlelen = 70
 ```
+
+## [Lazygit](https://github.com/jesseduffield/lazygit) 
+Lazygit is built into LazyVim. You can access it either from the command line (once you [install](https://github.com/jesseduffield/lazygit#installation) it), or through the `<leader>gg` shortcut.
+
+[Tutorial](https://www.youtube.com/watch?v=VDXvbHZYeKY)  
+[15 Lazygit Features In Under 15 Minutes](https://www.youtube.com/watch?v=CPLdltN7wgE)  
