@@ -61,7 +61,7 @@ To discard all changes:
 git checkout . 
 ```
 
-# [Oh-my-zsh]()
+# [Oh-my-zsh](https://ohmyz.sh/)
 If you install Oh-my-zsh, it will add a bunch of aliases to your shell. You can see the git aliases with:  
 `alias | grep git`
 
