@@ -61,3 +61,23 @@ To discard all changes:
 git checkout . 
 ```
 
+# [Oh-my-zsh]()
+If you install Oh-my-zsh, it will add a bunch of aliases to your shell. You can see the git aliases with:  
+`alias | grep git`
+
+Here are the ones I use:
+
+Alias | What it Does
+-|-
+`ga` | git add
+`gco` | git checkout
+`gst` | git status
+`gcm` | git checkout master/main
+`gco -` | checkout last branch
+`gp` | git push
+`gl` | git pull
+`gsta` | git stash
+`gstaa` | git stash apply
+`gcmsg` | git commit -m
+`gd` | git diff
+`gds` | git diff --staged
