@@ -9,7 +9,7 @@
 ## Set up ESLint
 1) Open Mason (`<Space>cm`), search for `eslint-lsp` and press `i` to install.  
 2) Enable extras with `:LazyExtras` (this automatically adds the [config for ESLint](https://www.lazyvim.org/extras/linting/eslint) that runs `EslintFixAll` on save and I believe reads ESLint configs).  
-3) Restart editor. 
+3) Restart editor.  
 If a problem arises with the LSP, running `:LspRestart` might fix it.
 
 ## Code Folding
