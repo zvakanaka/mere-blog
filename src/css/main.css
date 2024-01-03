@@ -58,6 +58,7 @@ body {
   margin-top: 4em;
 }
 .navigation {
+  background: #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
