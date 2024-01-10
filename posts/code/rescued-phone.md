@@ -5,7 +5,7 @@ I got a flip phone as a cheap replacement and then ordered a Google Pixel 5 on A
 
 It made me really happy to know it wasn't stolen. I felt so grateful that someone turned it in, and that the sherif brought it back to me. I feel bad for thinking it was for a moment! Also, it was nice to go without a smartphone for a bit. Flip phones these days (with KaiOS) have Google Maps, YouTube, an E-Pub reader, conversation-view texting, and voice-to-text typing - a little clunky, but it's do-able!
 
-![PXL_20220103_170143853](https://user-images.githubusercontent.com/8365885/152913229-997f0f69-44ba-4a2b-9b98-fe5d9245f522.jpg)
+![snowshoeing](https://github.com/zvakanaka/mere-blog/assets/8365885/6f1a9741-3626-42f2-b154-8e21452f68ed)
 
 ## Android Backup Tips
 
