@@ -82,6 +82,7 @@ Alias | What it Does
 `gd` | git diff
 `gds` | git diff --staged
 `gm` | git merge
+`gcl` | git clone
 
 # More Aliases
 Add these to `~/.zshrc` or `~/.zsh_aliases`:
