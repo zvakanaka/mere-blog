@@ -71,9 +71,9 @@ Alias | What it Does
 -|-
 `ga` | git add
 `gco` | git checkout
+`gco -` | checkout last branch
 `gst` | git status
 `gcm` | git checkout master/main
-`gco -` | checkout last branch
 `gp` | git push
 `gl` | git pull
 `gsta` | git stash
@@ -81,3 +81,16 @@ Alias | What it Does
 `gcmsg` | git commit -m
 `gd` | git diff
 `gds` | git diff --staged
+`gm` | git merge
+
+# More Aliases
+Add these to `~/.zshrc` or `~/.zsh_aliases`:
+```
+# open a pull request in a web browser
+alias pr='open ${$(git config --get remote.origin.url)%%.git}/compare/$(git branch --show)\?expand\=1'
+# open the current repository in a web browser
+alias og='open ${$(git config --get remote.origin.url)%%.git}'
+```
+
+# Better Diffs
+[delta](https://github.com/dandavison/delta#readme)
