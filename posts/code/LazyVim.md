@@ -2,6 +2,8 @@
 
 "[LazyVim](https://www.lazyvim.org/) is a [Neovim](https://neovim.io/) setup powered by [💤 lazy.nvim](https://github.com/folke/lazy.nvim) to make it easy to customize and extend your config."  
 
+[Here's a really good video](https://www.youtube.com/watch?v=N93cTbtLCIM) to quickly understand how to configure LazyVim.
+
 [Vim key notations](https://vimdoc.sourceforge.net/htmldoc/intro.html#keycodes) 
 
 `vimtutor` is a command to learn Vim.  

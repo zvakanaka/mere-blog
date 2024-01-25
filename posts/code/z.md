@@ -5,7 +5,7 @@
 Add the [`zsh-z`](https://github.com/agkozak/zsh-z) [plugin](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) into the `plugins` array of your `~/.zshrc`.  
 E.g.:
 ```sh
-plugins=(git gitfast last-working-dir zsh-syntax-highlighting history-substring-search zsh-z)
+plugins=(git gitfast last-working-dir zsh-syntax-highlighting zsh-z)
 ```
 
 ## Installing without [Oh My Zsh](https://ohmyz.sh/)

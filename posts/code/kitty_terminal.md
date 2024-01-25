@@ -1,5 +1,6 @@
 # [Kitty Terminal](https://sw.kovidgoyal.net/kitty/)
 ## Mac [Shortcuts](https://sw.kovidgoyal.net/kitty/overview/#tabs-and-windows)
+(check `man kitty` for shortcuts)
 
 Combo | Feature
 -|-
