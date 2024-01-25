@@ -71,6 +71,7 @@ Alias | What it Does
 -|-
 `ga` | git add
 `gco` | git checkout
+`gcb` | git checkout -b
 `gco -` | checkout last branch
 `gst` | git status
 `gcm` | git checkout master/main
