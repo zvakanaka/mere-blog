@@ -1,11 +1,7 @@
-Adam Quinton
-============
-
 -------------------     ----------------------------
 ## [GitHub](https://github.com/zvakanaka)
 [codepen](https://codepen.io/zvakanaka)  
 [npm](https://www.npmjs.com/~zvakanaka)  
-**quintonish**@gmail**.**com
 -------------------     ----------------------------
 
 Education
