@@ -115,6 +115,7 @@ return {
   },
 }
 ```
+To start Neovim without any plugins: `nvim -u NONE filename`
 
 ## [LazyExtras](https://www.lazyvim.org/extras)
 Toggle in `:LazyExtras` with the `x` key.
@@ -126,6 +127,7 @@ Name | Notes
 
 ## [Colorscheme](https://www.lazyvim.org/plugins/colorscheme) and Theme
 `<Space>uC` for the telescope "Colorscheme with preview" picker (live update).
+`<Space>ub` toggles light/dark mode.
 
 LazyVim sets up [Tokyo Night](https://github.com/folke/tokyonight.nvim) and [Habamax](https://github.com/ntk148v/habamax.nvim) in `lua/config/lazy.lua`. If you want to use another theme, you will need to comment out those colorschemes.
 
@@ -141,8 +143,27 @@ vim.opt.titlestring = " %-25.55F %a%r%m" -- or 
 vim.opt.titlelen = 70
 ```
 
+LSP
+`<leader>gr` goto references
+`<leader>sR` repeat last search
+`<leader>cr` rename reference
+`<leader>gf` goto file
+`<leader>gd` goto definition
+
+## BufferLine
+Re-order tabs: `BufferLineMove[Prev/Next]`
+
+## [Filetype](https://neovim.io/doc/user/filetype.html)
+Query which file type is being used: `:set filetype?`
+
+Set the current file type: `:set filetype=lua`
+
 ## [Lazygit](https://github.com/jesseduffield/lazygit) 
 Lazygit is built into LazyVim. You can access it either from the command line (once you [install](https://github.com/jesseduffield/lazygit#installation) it), or through the `<leader>gg` shortcut.
+[Key bindings](https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Keybindings_en.md)
+Stash with `s`, pop with (tab down to stash box) `g`
+[Check out remote branch](https://github.com/jesseduffield/lazygit/issues/884#issuecomment-1773843153)
+[Merge conflict key bindings](https://github.com/jesseduffield/lazygit/issues/497)
 
 [Tutorial](https://www.youtube.com/watch?v=VDXvbHZYeKY)  
 [15 Lazygit Features In Under 15 Minutes](https://www.youtube.com/watch?v=CPLdltN7wgE)  
