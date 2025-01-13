@@ -43,4 +43,4 @@ https://sw.kovidgoyal.net/kitty/remote-control/#kitty-get-text
 https://sw.kovidgoyal.net/kitty/conf/#tab-bar  
 https://sw.kovidgoyal.net/kitty/conf/#os-specific-tweaks  
 https://sw.kovidgoyal.net/kitty/conf/#keyboard-shortcuts  
-
+https://sw.kovidgoyal.net/kitty/open_actions/#scripting-the-opening-of-files-with-kitty-on-macos  
