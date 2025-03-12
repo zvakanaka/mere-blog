@@ -148,3 +148,7 @@ To make these aliases available, rerun your shell setup with `exec zsh`, or open
 ### Better Diffs
 
 [delta](https://github.com/dandavison/delta#readme)
+
+### Disable Pushing to Main/Master
+
+`git config branch.master.pushRemote no_push`
