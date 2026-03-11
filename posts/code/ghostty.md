@@ -33,7 +33,7 @@ theme = "GruvboxDark"
 ```
 
 
-It's fast (piping/pasting megabytes of text doesn't take much time - I do this a lot when pasting cURL commands with large payloads to test things). Splits are click+dragable, which Kitty does not have (Kitty requires cmd+r to resize splits with the keyboard). Tabs are click+dragable to reorder.
+It's fast. Splits are click+dragable (both resizing and moving), which Kitty does not have (Kitty requires cmd+r to resize splits with the keyboard). Tabs are also click+dragable to reorder.
 
 For SSH, [copy ghostty's terminfo to the remote machine](https://ghostty.org/docs/help/terminfo#copy-ghostty's-terminfo-to-a-remote-machine) (this avoids strange behavior).
 
@@ -45,10 +45,12 @@ For SSH, [copy ghostty's terminfo to the remote machine](https://ghostty.org/doc
 - Focus follows mouse across splits (must be enabled with `focus-follows-mouse = true`).
 - Cmd+ctrl+space works to open the MacOS emoji picker.
 - Individual font size for each split/tab.
+- ctrl+f/cmd+f for [find](https://github.com/ghostty-org/ghostty/issues/189)
+- [Move/reorder splits](https://github.com/ghostty-org/ghostty/pull/10090) by clicking and dragging top of the split with the mouse.
+- Support for [terminal bell](https://ghostty.org/docs/vt/control/bel) is customizable (I like my `alias ding=echo -e '\a'` alias)
 
 ## Missing Features
 
-- No support for terminal bell yet (I like my `alias ding=echo -e '\a'` alias) :( https://ghostty.org/docs/vt/control/bel
-- ctrl+f/cmd+f for find: https://github.com/ghostty-org/ghostty/issues/189
-- Support for ctrl+tab for most recent tab https://github.com/ghostty-org/ghostty/discussions/2393
-- [Move/reorder splits](https://github.com/ghostty-org/ghostty/discussions/3325)
+- [ctrl+tab for most recent tab](https://github.com/ghostty-org/ghostty/discussions/2393)
+- [Open file on a specific line with <filename>:<lineNo>](https://github.com/ghostty-org/ghostty/discussions/3892)
+- [Multiple Actions in a Single Keybind](https://github.com/ghostty-org/ghostty/discussions/3175)
