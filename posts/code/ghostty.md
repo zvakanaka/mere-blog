@@ -48,6 +48,8 @@ For SSH, [copy ghostty's terminfo to the remote machine](https://ghostty.org/doc
 - ctrl+f/cmd+f for [find](https://github.com/ghostty-org/ghostty/issues/189)
 - [Move/reorder splits](https://github.com/ghostty-org/ghostty/pull/10090) by clicking and dragging top of the split with the mouse.
 - Support for [terminal bell](https://ghostty.org/docs/vt/control/bel) is customizable (I like my `alias ding=echo -e '\a'` alias)
+- Make current split take up full window with [toggle_split_zoom](https://ghostty.org/docs/config/keybind/reference#toggle_split_zoom) (<kbd>cmd+shift+enter</kbd>)
+- Rename tabs with [prompt_tab_title](https://github.com/ghostty-org/ghostty/discussions/11151) and [set color](https://github.com/ghostty-org/ghostty/issues/2509)
 
 ## Missing Features
 
