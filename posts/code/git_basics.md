@@ -86,6 +86,8 @@ If you have pushed your changes (even if there have been [multiple changes since
 git revert --no-commit <commit-hash>..HEAD
 ```
 
+Also, if you pushed something secret to a public repository, it can never be fully removed (see [here](https://trufflesecurity.com/blog/guest-post-how-i-scanned-all-of-github-s-oops-commits-for-leaked-secrets)), so you should change the secret/contact security.
+
 ## Unstage Files
 
 To [unstage all files](https://stackoverflow.com/a/21396698/4151489), run:
@@ -152,3 +154,4 @@ To make these aliases available, rerun your shell setup with `exec zsh`, or open
 ### Disable Pushing to Main/Master
 
 `git config branch.master.pushRemote no_push`
+
